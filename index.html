@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+  </script>
+  <title>Personal Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="navbar">
+    <a href="#welcome-section">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#profile-link">Contact Me</a>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Hello I am Oleksandr</h1>
+    <h2>a web developer</h2>
+    <div class="about-me">
+      <img src="background_test.png" alt="personal-picture">
+      <p>Welcome to my personal page. I'm currently on my way to become a computer programmer, learning Web and Android App development. On this page you can find an information about my skills and down below you can also see some of my projects (if there are some to show off). Well, this page might still look pretty raw but i'm working on it and this will be a complete masterpiece in the future ;)
+      </p>
+    </div>
+  </section>
+  <hr id= "first-horizontal">
+  <section id="skills">
+    <h2>My Skills.</h2>
+    <div class="skill-row_1">
+      <img class="skill_1" src="android_java.png" alt="Skills image">
+      <div class="skill-description">
+        <h3>Java/Android</h3>
+        <p>Basic understanding of Object-oriented programming and Native Android App development with Java.</p>
+      </div>
+    </div>
+    <div class="skill-row_2">
+      <img class="skill_2" src="html_css.png" alt="Skills image">
+      <div class="skill-description">
+        <h3>HTML/CSS</h3>
+        <p>Basic knowledge of Web Development (HTML/CSS). "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section id="projects">
+    <h2 id="my-projects-header">My Projects</h2>
+    <div class="project-tile">
+      <a href="#">Product Landing Page</a>
+    </div>
+    <div class="project-tile">
+      <a href="#">Technical Documentation Page</a>
+    </div>
+    <div class="project-tile">
+      <a href="#">Personal Web Page</a>
+    </div>
+    <div class="project-tile">
+      <a href="#">Bill Tracker Android App</a>
+    </div>
+  </section>
+  <hr>
+  <div class="contact-me">
+    <a id="profile-link" href="#" target="_blank">GitHub</a>
+    <a id="profile-link" href="#" target="_blank">Send an Email</a>
+    <a id="profile-link" href="#" target="_blank">Facebook</a>
+    <a id="profile-link" href="#" target="_blank">LinkedIn</a>
+  </div>
+  <footer>
+    <p id="footer">© 2021 Oleksandr Levchuk.</p>
+  </footer>
+
+
+
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-80px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+</body>
+
+</html>
